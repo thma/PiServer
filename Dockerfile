@@ -9,7 +9,7 @@ ADD piServer /usr/bin
 ENV fprocess="piServer"
 
 # add FAAS watchdog
-ADD https://github.com/openfaas/faas/releases/download/0.7.6/fwatchdog  /usr/bin
+ADD https://github.com/openfaas/faas/releases/download/0.7.7/fwatchdog  /usr/bin
 RUN chmod +x /usr/bin/fwatchdog
 
 # Set to true to see request in function logs

@@ -12,7 +12,7 @@ stack install
 cp -L ~/.local/bin/piServer .
 
 # copy haskell runtime libs to local folder (about 5MB)
-./prepare-haskell-libs.sh
+#./prepare-haskell-libs.sh
 
 # build faas docker container & deploy it
 sudo faas build -f piserver.yml  && faas deploy -f piserver.yml
